@@ -20,22 +20,23 @@ public class ToDoListApplication {
 
         // Mark a task as completed
         toDoList.markToDoAsCompleted("Study");
+        toDoList.markToDoAsCompleted("What mom said to do");
+        toDoList.markToDoAsCompleted("Workout");
+        toDoList.markToDoAsCompleted("Submit Assignment");
 
         // Try to mark a non-existent task as completed
         toDoList.markToDoAsCompleted("Non-existent task");
 
-        // Add another task
+        // To add new task to the list
         Task task5 = new Task("Submit Assignment", "Data center report, DSA individual group and assignment");
         toDoList.addToDo(task5);
 
-        // View the updated To-Do List
+        // Displaying updated To-Do List
         System.out.println("\nUpdated To-Do List:");
         toDoList.viewToDoList();
 
-        // Mark another task as completed
-        toDoList.markToDoAsCompleted("What mom said to do");
-        toDoList.markToDoAsCompleted("Workout");
-        toDoList.markToDoAsCompleted("Submit Assignment");
+        // Mark other tasks as completed
+        
 
         // View the final To-Do List
         System.out.println("\nFinal To-Do List:");
